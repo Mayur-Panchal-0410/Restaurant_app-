@@ -1,0 +1,59 @@
+.asd {
+  display: flex;
+  justify-content: flex-start; /* Align cards to the start */
+  align-items: center;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent cards from wrapping */
+  padding: 10px 0;
+}
+
+.asd .card {
+  text-align: center;
+  flex: 0 0 auto; /* Ensure cards do not shrink */
+  width: 230px; /* Set a fixed width for the cards */
+  margin-right: 15px; /* Add space between the cards */
+  margin-left: 15px; /* Add space between the cards */
+}
+
+.asd .card-img-top {
+  height: 150px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensure the images cover the card area */
+}
+
+.asd h5 {
+  font-size: 16px; /* Customize font size */
+  font-weight: bold; /* Customize font weight */
+  text-align: center; /* Center the title */
+}
+
+.dish-div {
+  margin: 15px;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+@media (max-width: 768px) {
+  .asd .card {
+    width: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .asd .card-img-top {
+    height: 120px;
+  }
+
+  .asd .card-body {
+    padding: 10px; /* Ensure enough padding */
+  }
+
+  .asd .card-title {
+    font-size: 14px; /* Adjust font size for better readability */
+    margin: 0; /* Ensure no margin is causing overflow */
+}
+}
+
+
+
+
+
